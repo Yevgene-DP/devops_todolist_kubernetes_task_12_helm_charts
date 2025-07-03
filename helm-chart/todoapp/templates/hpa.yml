@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: todoapp
+  name: {{ .Chart.Name }}-deployment
   namespace: todoapp
 spec:
   scaleTargetRef:
